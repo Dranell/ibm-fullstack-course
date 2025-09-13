@@ -16,7 +16,7 @@ function calculateTotalSales(sales) {
 console.log("Total Sales Amount:", calculateTotalSales(sales)); 
 
 
-//Exercise 2. 
+//Exercise 2: Generate an order receipt
 // An array of orders, each with item name, quantity, and price
 const orders = [
     { item: "Espresso", quantity: 2, price: 3.5 },
@@ -56,7 +56,7 @@ function generateReceipt(orders) {
 generateReceipt(orders);
 
 
-//Exercise 3 
+//Exercise 3: Validate passwords
 const passwords = ["Password123", "short", "ValidPass123", "too_long_password_example", "12345"];
 
 function validatePasswords(passwords) {
@@ -71,3 +71,23 @@ function validatePasswords(passwords) {
 }
 
 validatePasswords(passwords);
+
+
+//Exercise 4: Track product stock levels
+const products = [
+    { product: "Laptop", stock: 5 },
+    { product: "Headphones", stock: 0 },
+    { product: "Smartphone", stock: 3 }
+];
+
+function checkStockLevels(products) {
+    for (let i = 0; i < products.length; i++) {
+        if (products[i].stock > 0) {
+            console.log(`${products[i].product} is In Stock.`);
+        } else {
+            console.log(`${products[i].product} is Out of Stock.`);
+        }
+    }
+}
+
+checkStockLevels(products);
